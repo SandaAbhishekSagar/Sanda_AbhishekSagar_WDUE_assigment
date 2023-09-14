@@ -1,0 +1,37 @@
+table{
+    border-collapse: collapse;
+}
+#container{
+    width: 70%;
+    margin: auto;
+}
+.education td{
+    text-align: left;
+    padding-bottom: 15px;
+}
+.education th{
+    text-align: left;
+}
+.project td{
+    text-align: left;
+    padding-bottom: 15px;
+}
+.project th{
+    text-align: left;
+}
+header {
+background-color: rgb(139, 0, 139);
+padding: 5px;
+text-align: center;
+font-size: 35px;
+color: white;
+}
+footer{
+padding: 5px;
+background-color: rgb(208, 201, 201);
+}
+h1{border-radius: 15px;}
+h2{background-color: rgb(205, 162, 216); }
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
