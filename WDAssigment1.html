@@ -9,39 +9,55 @@
 <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-    <main id="container">
-        <header><h1>Sanda Abhishek Sagar</h1></header>
+    <div id="frist">
+    <header><h1>Sanda Abhishek Sagar</h1></header>
+    <nav>
+        <ul>
+            
+            <li><a href="#section1"><b>Education</b></a></li>
+            <li><a href="#section2"><b>Project and Research Experience</b></a></li>
+            <li><a href="#section3"><b>Leadership</b></a></li>
+            <li><a href="pic.html"><b>Certifications</b></a></li>
+        </ul>
+    </nav>
+    <main>
+        
         <br>
         <audio controls>
             <source src="33-School-St.ogg" type="audio/ogg">
             <source src="33 School St.mp3" type="audio/mpeg">
         </audio>
-        <table style="width: 100%;">
-            <tr>
-                <td>
-                    
+        <br>
+        <br>
+        <div id="overflw">  
+            <div class="col1">      
                     Address: 26 School St, Unit 1, Roxbury, MA 02119  <br>
                     Email:<a href="mailto:sanda.a@northeastern.edu">sanda.a@northeastern.edu</a> <br> Phone No: <a href="tel:+18573959451">+1(857) 395-9451</a> 
                     <br>
                     
                     <a href="https://www.linkedin.com/in/sandaabhisheksagar/"><img src="download.png" width="30" height="30"></a>
             
-                </td>
-                <td>
+               
                     <br>
-                    
-                    <img src="passport.jpg" alt="image" width="175" height="175" >
-                </td>
-            </tr>
-            <tr>
-                <td><b>Skills:</b> <menu><li>Programming: C#, SQL, HTML, JavaScript, CSS, Angular, Java, C.</li>
+                    <br>
+                    <br>
+              
+                <b>Skills:</b> <menu><li>Programming: C#, SQL, HTML, JavaScript, CSS, Angular, Java, C.</li>
                 <li>Leadership, Management</li>
                 <li>Designing</li>
-                </menu> </td>
-            </tr>
-        </table> 
-<h2>Education</h2>       
-        <table class="education" style="width: 100%;">
+                </menu> 
+            </div>
+            <div class="col2">
+                <figure>
+                <img src="passport.jpg" alt="image" width="175" height="175">
+                <figcaption>
+                    Sanda Abhishek Sagar
+                </figcaption>
+                </figure>
+            </div>
+        </div>
+<h2 id="section1">Education</h2>       
+        <table  class="education" style="width: 100%;">
             <tr>
                 <th><h3>University</h3></th>
                 <th style="width: 10%;"><h3>Location</h3></th>
@@ -74,7 +90,7 @@
                
             </tr>
         </table>
-        <h2>Projects & Research Experience</h2> 
+        <h2 id="section2">Projects & Research Experience</h2> 
             <table class="project" style="width: 100%;">
                 <tr>
                     <th><h3>Project</h3></th>
@@ -118,7 +134,7 @@
                     <td>January 2022</td>
                 </tr>
             </table>
-        <h2>Leadership</h2>
+        <h2 id="section3">Leadership</h2>
         <table class="education" style="width: 100%;">
             <tr>
                 <th><h3>Company</h3></th>
@@ -199,5 +215,6 @@
             </table>
         </footer>
     </main>
+    </div>
 </body>
 </html>
