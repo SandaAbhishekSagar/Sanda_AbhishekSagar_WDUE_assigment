@@ -29,3 +29,8 @@ I used the following tags in my code.
 <input> - This tag is used inside a form tag to define user interactive controls like buttons, textboxs etc.
 <video> - This tag is used to embed a video inside a html page.
 <button> - This tag is used inside a form tag to include a button that can interact with user.
+<nav> - This tag is used to define a navigation bar.
+<ul> - This tag defines the unordered list.
+<figure> - This tag is used to define the self-contained content like images, gifs and diagrams.
+<figurecation> - This tag is used to define the caption under the figure, it is used inside the figure tag.
+
