@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+	  #myTable {
+	border:2px solid green;
+	border-collapse: collapse;
+	margin: 30px 30px 20px 40px;
+}
+#myTable td, th {
+	border:1px solid green;
+	padding: 5px;
+}
+  </style>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Feedback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form method="post" id="myForm" name="myForm">
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="miss" />Miss
+			<input type="radio" name="title" id="mr" value="mr" />Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" />Mrs.
+			<br><br>
+			<div id="error_title" style="display: none; color: red;">
+                select one of these options
+                <br><br>
+            </div>
+			<div class="control">
+			<label for="firstName">First Name*:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="First Name" required/>	
+			<br><br>
+		 </div>
+			<div id="error_firstName" style="display: none; color: red;">
+                Invalid first Name, Please enter valid first name.
+                <br><br>
+            </div>
+			
+			<div class="control">
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" required/>
+			<br><br>
+			</div>
+			<div id="error_lastName" style="display: none; color: red;">
+                Invalid last name, Please enter valid last name.
+                <br><br>
+            </div>
+			
+			<div class="control">
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="email" id="email" placeholder="yourname@northeastern.edu" required/>
+			<br><br>
+			</div>
+			<div id="error_email" style="display: none; color: red;">
+                Invalid email, Please enter valid email.
+                <br><br>
+            </div>
+			
+			<div class="control">
+			<label for="phoneNumber">Phone Number*:</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" min required/>
+			<br><br>
+			</div>
+			<div id="error_phoneNumber" style="display: none; color: red;">
+                Invalid phoneNumber, Please enter valid phoneNumber.
+                <br><br>
+            </div>
+			
+			<div class="control">
+				<label for="Address1">Street Address 1*:</label>
+				<input type="text" name="Address1" id="Address1" placeholder="" required/>
+				<br><br>
+				</div>
+				<div id="error_address1" style="display: none; color: red;">
+					Address can't be null.
+					<br><br>
+			</div>
+			<div id="error_address12" style="display: none; color: red;">
+				Address max length reached.
+				<br><br>
+		</div>
+		<div id="error_address13" style="display: none; color: red;">
+			Address must have min characters.
+			<br><br>
+	</div>
+			<div class="control">
+				<label for="Address2">Street Address 2:</label>
+				<input type="text" name="Address2" id="Address2" placeholder="" />
+				<br><br>
+			</div>
+
+			<div class="control">
+				<label for="city">City*:</label>
+				<input type="text" name="city" id="city" placeholder="city" required/>
+				<br><br>
+				</div>
+				<div id="error_city" style="display: none; color: red;">
+					Please enter city.
+					<br><br>
+			</div>
+
+			<div class="control">
+				<label for="state1">State*:</label>
+				<input type="text" name="state1" id="state1" placeholder="State" required/>
+				<br><br>
+				</div>
+				<div id="error_state1" style="display: none; color: red;">
+					Please enter State.
+					<br><br>
+			</div>
+
+			<label for="state">Fav State?*:</label>
+			<select id="state" name="state" onchange="addDynamicCheckboxes()">
+				<option value="1">Select</option>
+				<option value="MA">MA</option>
+				<option value="NJ">NJ</option>
+				<option value="NY">NY</option>				
+				<option value="CA">CA</option>
+				<option value="FL">FL</option>				
+			</select>
+			<br><br>
+			<div id="error_state" style="display: none; color: red;">
+                Please select one of the states.
+                <br><br>
+            </div>
+			<div id="checkboxContainer">
+				<!-- Dynamic checkboxes will be added here -->
+			</div>
+			
+			<div id="error_checkbox" style="display: none; color: red;">
+                Please check checkbox.
+                <br><br>
+            </div>
+			<div id="error_checktext" style="display: none; color: red;">
+                Please enter text inside textbox.
+                <br><br>
+            </div>
+
+			<div class="control">
+            <label for="zipcode">ZipCode*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" required/>
+			<br><br>
+			</div>
+			<div id="error_zipcode" style="display: none; color: red;">
+                Invalid zipcode, Please enter valid zipcode.
+                <br><br>
+            </div>
+
+			<div class="control">
+            <label for="hear">How did you hear*:</label>
+			<input type='checkbox' name="source" value="facebook" /> Facebook
+            <input type='checkbox' name="source" value="google" /> Google
+            <input type='checkbox' name="source" value="yelp" /> Yelp 
+			<br><br> 
+			</div>
+			<div id="error_hear" style="display: none; color: red;">
+                Please select a checkbox.
+                <br><br>
+            </div>
+
+			<label for="comments">Comments*:</label>
+			<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25" required ></textarea>
+			<br><br>
+			<div id="error_text" style="display: none; color: red;">
+                Please enter comments in the comments section.
+                <br><br>
+            </div>
+			<input type="submit" name="submit" value="Submit">
+			<input type="reset">
+			<br><br>
+		 </form>
+	 </main>
+ </div>
+	 <table id="myTable" style="text-align: center;">
+		<tr id="header">
+			<th>Title</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Email Id</th>
+			<th>Phone Number</th>
+			<th>Address 1</th>
+			<th>Address 2</th>
+			<th>City</th>
+			<th>State</th>
+			<th>Fav State</th>
+			<th>What do u likes in Fav State</th>
+			<th>ZipCode</th>
+			<th>How did you hear</th>
+			<th>Comments</th>
+			<!-- <th>DELETE</th> -->
+		</tr>
+		<tbody>
+		</tbody>
+	 </table>
+
+ <script src="script3.js">
+ 
+ </script>
+
+ </body>
+</html>
