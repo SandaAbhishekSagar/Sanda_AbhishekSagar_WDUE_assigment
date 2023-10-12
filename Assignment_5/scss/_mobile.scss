@@ -1,0 +1,35 @@
+@media (max-width: 700px) {
+    .dashboard {
+        height: 700px;
+
+        &-content {
+            text-align: center;
+            .yes-2{
+                display: none;
+            }
+            .yes-3{
+                display: none;
+            }
+            .yes-4{
+                display: none;
+            }
+            img {
+                display: none;
+            }
+        }
+        .grid-layout{
+            // grid-template-columns: 1fr;
+            display: none;
+        }
+
+    }
+    .footerss{
+        .flex-layout{
+            flex-direction: column;
+        }
+        margin-top: auto;
+        // position: absolute;
+        
+        bottom: 0;
+    }
+}

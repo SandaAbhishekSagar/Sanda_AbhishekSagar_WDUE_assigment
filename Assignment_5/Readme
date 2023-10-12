@@ -1,0 +1,41 @@
+I used the following tags in my code.
+
+<html> - This tag tells the browser, that the below text is in the html format.
+<head> - This tag is used to place metadata and link external files.
+<body> - This tag contains all the html code such as paras, headings, hyperlinks, images, videos etc.
+<header> - This tag allows us to define the header of the html page.
+<h1> - This tag is used to draft the heading as a content title.
+<main> - Main tag contains the body of the html page.
+<link> - link tag is used to link up the external documents to the html page.
+<title> - This tag names the page with the name given inside it.
+<br> - Break tag is used to break or end the current line and start from the next line.
+<audio> - audio tag is used to insert an audioinside an html page.
+<table> - this tag is used to insert a table view inside an html page.
+<tr> - This tag is used to define a row inside a table.
+<td> - This tag is used to define a column inside a tr tag.
+<img> - This tag is used to insert an image inside the output page.
+<menu> - This is just similar to an unordered list tag used to create a menu list.
+<li> - This tag is used to define list items inside a menu tag, unordered list tag and ordered list tag.
+<b> - This tag is used to bold the selected text.
+<h2> - This tag is prioritized after h1 tag and it belongs to the heading tags.
+<h3> - This tag belongs to the heading tags prioritized after h2 and h1 tags.
+<h4> - This tag belongs to the heading tags prioritized after h3, h2, and h1 tags.
+<details> - This tag contains extra information in a dropdown widget which user can open and close on demand.
+<summary> - This tag identifies the visible heading for the details tag.
+<th> - This tag is used to define headings inside the table.
+<footer> - This tag allows the user to define the footer for the html page.
+<a> - This ia an hyperlink tag used to create an hyperlink to webpages, email, telephone number, address, location etc.
+<form> - form tag is used to create a user form for the user input.
+<input> - This tag is used inside a form tag to define user interactive controls like buttons, textboxs etc.
+<video> - This tag is used to embed a video inside a html page.
+<button> - This tag is used inside a form tag to include a button that can interact with user.
+<nav> - This tag is used to define a navigation bar.
+<ul> - This tag defines the unordered list.
+
+Scss Nesting => Nesting was implemented in _utilities.scss and _mobile.scss.
+Scss Interpolation => Interpolation was implemented in Interpolation.scss.
+Scss Variables => Variables were implemented in config.scss.
+Scss Mixin => Mixin was implemented in config.scss.
+Scss Functions => Functions were implemented in config.scss.
+Scss placeholder selectors => Placeholder selectors were implemented in button.scss.
+Scss Custom Property => Custom Properties were implemented in config.scss.

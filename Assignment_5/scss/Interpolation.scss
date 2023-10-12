@@ -1,0 +1,31 @@
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+
+    .grid-item {
+        background-color: $primary-color;
+        padding: 20px;
+        text-align: center;
+    }
+}
+.flex-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .flex-item {
+        margin: 0;
+        background-color: $primary-color;
+        padding: 20px;
+        flex: 1 0 100px;
+        text-align: center;
+    }
+    .flex-item1{
+        margin: 0;
+        background-color: $primary-color;
+        padding: 20px;
+        flex: 3 0 100px;
+        text-align: center;
+    }
+}
