@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="error" id="calculator-error"></div>
+        <div class="form-field">
+            <label for="num1">Number 1</label>
+            <input type="text" id="num1" placeholder="Number 1">
+            <!-- <div class="error-message" id="num1-error"></div> -->
+        </div>
+        <!-- <label for="num1">Number 1</label>
+        <input type="text" id="num1">
+        <br> -->
+        <br>
+        <!-- <label for="num2">Number 2</label>
+        <input type="text" id="num2">
+        <br> -->
+        <div class="form-field">
+            <label for="num2">Number 2</label>
+            <input type="text" id="num2" placeholder="Number 2">
+            <!-- <div class="error-message" id="num2-error"></div> -->
+        </div>
+        <br>
+        <button id="add">Add</button>
+        <button id="subtract">Subtract</button>
+        <button id="multiply">Multiply</button>
+        <button id="divide">Divide</button>
+        <br>
+        <br>
+        <p id="result">Result: <span id="calc-result">0</span></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>
